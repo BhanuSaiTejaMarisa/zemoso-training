@@ -1,4 +1,4 @@
-package com.learning.assignments;// Recursive Java program to print all files
+package com.learning.assignments.JAVA;// Recursive Java program to print all files
 // in a folder(and sub-folders)
 
 import java.io.File;
@@ -12,7 +12,8 @@ public class GFG
 	}
 	static void RecursivePrint(File[] arr,int index,int level, String searchFile)
 	{
-		if(arr!=null){// terminate condition
+		if(arr!=null){
+			// terminate condition
 			if (index == arr.length)
 				return;
 
@@ -47,7 +48,7 @@ public class GFG
 	public static void main(String[] args)
 	{
 		// Provide full path for directory(change accordingly)
-		String maindirpath = "/home/bhanum/";
+		String maindirpath = "/home/bhanum/projects";
 				
 		// File object
 		File maindir = new File(maindirpath);
@@ -57,7 +58,7 @@ public class GFG
 		{
 			// array for files and sub-directories
 			// of directory pointed by maindir
-			File arr[] = maindir.listFiles();
+			File[] arr = maindir.listFiles();
 			
 //			System.out.println("**********************************************");
 //			System.out.println("Files from main directory : " + maindir);

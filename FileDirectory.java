@@ -1,4 +1,4 @@
-package com.learning.assignments;
+package com.learning.assignments.JAVA;
 
 
 import java.io.File;
