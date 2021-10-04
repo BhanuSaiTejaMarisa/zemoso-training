@@ -1,4 +1,4 @@
-package com.learning.assignments;
+package com.learning.assignments.JAVA;
 
 import java.util.Scanner;
 
@@ -35,6 +35,7 @@ public class AtoZ {
     //Space Complexity - O(1)-> no new space is required except for
     // smallLetters and capitalLetters which are order of O(k) - k is constant
 
-    //Time complexity - O(n)-> loop runs for each alphabet a- z
+    //Time complexity - O(n^2)-> loop runs for each alphabet a- z and
+    // *contains* method takes O(n) each time
 
 }
